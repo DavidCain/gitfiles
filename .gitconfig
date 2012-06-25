@@ -9,3 +9,7 @@
 	prompt = false
 [core]
 	excludesfile = /home/david/Documents/gitfiles/.gitignore_global
+[alias]
+	ci = commit
+    co = checkout
+    st = status
