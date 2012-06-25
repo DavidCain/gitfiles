@@ -8,9 +8,9 @@
 [difftool]
 	prompt = false
 [core]
-	excludesfile = /home/david/Documents/gitfiles/.gitignore_global
+	excludesfile = ~/Documents/gitfiles/.gitignore_global
 [alias]
 	ci = commit
     co = checkout
     st = status
-    delete = !/home/david/Documents/gitfiles/git-rm-history.sh
+    delete = !~/Documents/gitfiles/git-rm-history.sh
