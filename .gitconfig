@@ -7,3 +7,5 @@
 	tool = gvimdiff
 [difftool]
 	prompt = false
+[core]
+	excludesfile = /home/david/Documents/gitfiles/.gitignore_global
