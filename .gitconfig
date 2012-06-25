@@ -1,0 +1,9 @@
+[user]
+	name = David Cain
+	email = davidjosephcain@gmail.com
+[color]
+	ui = true
+[diff]
+	tool = gvimdiff
+[difftool]
+	prompt = false
