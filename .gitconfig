@@ -13,3 +13,4 @@
 	ci = commit
     co = checkout
     st = status
+    delete = !/home/david/Documents/gitfiles/git-rm-history.sh
