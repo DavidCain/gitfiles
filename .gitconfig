@@ -10,7 +10,11 @@
 [core]
 	excludesfile = ~/Documents/gitfiles/.gitignore_global
 [alias]
+    # Shortened built-in commands
 	ci = commit
     co = checkout
     st = status
+    wh = whatchanged
+
+    # Custom commands
     delete = !~/Documents/gitfiles/git-rm-history.sh
