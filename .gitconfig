@@ -3,18 +3,22 @@
 	email = davidjosephcain@gmail.com
 [color]
 	ui = true
+[merge]
+	tool = vimdiff
 [diff]
-	tool = gvimdiff
+	tool = vimdiff
 [difftool]
 	prompt = false
 [core]
 	excludesfile = ~/Documents/gitfiles/.gitignore_global
 [alias]
-    # Shortened built-in commands
+	# Shortened built-in commands
 	ci = commit
-    co = checkout
-    st = status
-    wh = whatchanged
+	co = checkout
+	st = status
+	wh = whatchanged
 
-    # Custom commands
-    delete = !~/Documents/gitfiles/git-rm-history.sh
+	d = difftool
+
+	# Custom commands
+	delete = !~/Documents/gitfiles/git-rm-history.sh
