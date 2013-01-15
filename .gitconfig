@@ -22,3 +22,5 @@
 
 	# Custom commands
 	delete = !~/Documents/gitfiles/git-rm-history.sh
+[branch]
+	autosetupmerge = true
