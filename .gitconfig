@@ -26,3 +26,5 @@
 	autosetupmerge = true
 [rerere]
 	enabled = true
+[advice]
+	statusHints = false
