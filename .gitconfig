@@ -24,3 +24,5 @@
 	delete = !~/Documents/gitfiles/git-rm-history.sh
 [branch]
 	autosetupmerge = true
+[rerere]
+	enabled = true
