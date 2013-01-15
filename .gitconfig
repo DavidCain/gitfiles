@@ -30,3 +30,13 @@
 	enabled = true
 [advice]
 	statusHints = false
+
+# Work locally in spaces on a repository that's tabbed
+[filter "indent"]
+    clean = unexpand --tabs=4 --first-only
+    smudge = expand --tabs=4 --initial
+
+# Force the use of spaces
+[filter "detab"]
+    clean = expand --tabs=4 --initial  # Expand tabs to spaces
+    smudge = cat  # Take file back (with spaces)
