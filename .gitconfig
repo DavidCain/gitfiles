@@ -11,6 +11,8 @@
 	prompt = false
 [core]
 	excludesfile = ~/Documents/gitfiles/.gitignore_global
+	whitespace = trailing-space,space-before-tab
+	autocrlf = input
 [alias]
 	# Shortened built-in commands
 	ci = commit
