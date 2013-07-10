@@ -1,3 +1,24 @@
+# Python gitignore #
+####################
+*.py[cod]
+
+# Packages (modified to exclude some directories I like to track)
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+
 # Vim undofiles #
 #################
 *.un~
