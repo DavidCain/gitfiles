@@ -42,3 +42,5 @@
 [filter "detab"]
     clean = expand --tabs=4 --initial  # Expand tabs to spaces
     smudge = cat  # Take file back (with spaces)
+[push]
+	default = simple
