@@ -13,6 +13,7 @@
 	excludesfile = ~/Documents/gitfiles/.gitignore_global
 	whitespace = trailing-space,space-before-tab
 	autocrlf = input
+	editor = /usr/bin/vim
 [alias]
 	# Shortened built-in commands
 	ci = commit
