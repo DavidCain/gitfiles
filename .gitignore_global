@@ -56,3 +56,7 @@ pip-log.txt
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Miscellaneous #
+#################
+.ropeproject
