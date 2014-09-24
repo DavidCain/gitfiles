@@ -49,6 +49,7 @@ pip-log.txt
 *.log
 *.sql
 *.sqlite
+*.sqlite3
 
 # OS generated files #
 ######################
