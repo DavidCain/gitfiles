@@ -18,6 +18,7 @@
 	# Shortened built-in commands
 	ci = commit
 	co = checkout
+	cp = cherry-pick
 	st = status
 	wh = whatchanged
     staged = diff --cached
