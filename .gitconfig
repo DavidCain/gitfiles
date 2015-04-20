@@ -24,11 +24,11 @@
 	d  = diff
 	st = status
 	wh = whatchanged
-    staged = diff --cached
+	staged = diff --cached
 
 	# Custom commands
 	delete = !~/Documents/gitfiles/git-rm-history.sh
-    sed = !git ls-files | xargs sed -i
+	sed = !git ls-files | xargs sed -i
 [branch]
 	autosetupmerge = true
 [rerere]
@@ -38,12 +38,12 @@
 
 # Work locally in spaces on a repository that's tabbed
 [filter "indent"]
-    clean = unexpand --tabs=4 --first-only
-    smudge = expand --tabs=4 --initial
+	clean = unexpand --tabs=4 --first-only
+	smudge = expand --tabs=4 --initial
 
 # Force the use of spaces
 [filter "detab"]
-    clean = expand --tabs=4 --initial  # Expand tabs to spaces
-    smudge = cat  # Take file back (with spaces)
+	clean = expand --tabs=4 --initial  # Expand tabs to spaces
+	smudge = cat  # Take file back (with spaces)
 [push]
 	default = simple
