@@ -15,16 +15,28 @@
 	autocrlf = input
 	editor = /usr/bin/vim
 [alias]
-	# Shortened built-in commands
+	# General
 	a  = add
 	br = branch
 	ci = commit
 	co = checkout
 	cp = cherry-pick
-	d  = diff
 	st = status
-	wh = whatchanged
+
+	# Diffs
+	d  = diff
+	udiff = diff -w --word-diff=color
 	staged = diff --cached
+
+	# Tags
+	ft = fetch --tags
+	pt = push --tags
+
+	# Logging
+	la = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]' --graph -p
+	lo = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]'
+	lg = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]' --graph
+	wh = whatchanged
 
 	# Custom commands
 	delete = !~/Documents/gitfiles/git-rm-history.sh
