@@ -23,6 +23,12 @@
 	cp = cherry-pick
 	st = status
 
+	# Stashes
+	sp = stash pop
+	ss = stash show
+	sd = stash drop
+	sl = stash list
+
 	# Diffs
 	d  = diff
 	udiff = diff -w --word-diff=color
