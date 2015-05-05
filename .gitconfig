@@ -21,6 +21,7 @@
 	ci = commit
 	co = checkout
 	cp = cherry-pick
+	rh = reset --hard HEAD
 	st = status
 
 	# Stashes
@@ -31,7 +32,7 @@
 
 	# Diffs
 	d  = diff
-	udiff = diff -w --word-diff=color
+	u = diff -w --word-diff=color
 	staged = diff --cached
 
 	# Tags
