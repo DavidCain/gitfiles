@@ -44,6 +44,7 @@
 	lo = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]'
 	lg = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]' --graph
 	wh = whatchanged
+	wu = whatchanged -p -w --word-diff=color
 
 	# Custom commands
 	delete = !~/Documents/gitfiles/git-rm-history.sh
