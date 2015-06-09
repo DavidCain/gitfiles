@@ -30,6 +30,10 @@
 	sd = stash drop
 	sl = stash list
 
+	# Rebasing
+	ri = rebase --interactive
+	rc = rebase --continue
+
 	# Diffs
 	d  = diff
 	u = diff -w --word-diff=color
