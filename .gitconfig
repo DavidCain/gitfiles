@@ -19,6 +19,7 @@
 	a  = add
 	br = branch
 	ci = commit
+	cia = commit --amend
 	co = checkout
 	cp = cherry-pick
 	rh = reset --hard HEAD
