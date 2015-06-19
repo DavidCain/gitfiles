@@ -74,3 +74,5 @@
 	smudge = cat  # Take file back (with spaces)
 [push]
 	default = simple
+[grep]
+	linenumber = true
