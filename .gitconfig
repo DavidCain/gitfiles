@@ -36,6 +36,7 @@
 	sl = stash list
 
 	# Rebasing
+	ra = rebase --abort
 	ri = rebase --interactive
 	rc = rebase --continue
 
