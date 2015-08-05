@@ -17,6 +17,7 @@
 [alias]
 	# General
 	a  = add
+	ap = add -p
 	bl = blame
 	br = branch
 	ci = commit
