@@ -60,7 +60,7 @@
 	# Custom commands
 	delete = !~/Documents/gitfiles/git-rm-history.sh
 	sed = !git ls-files | xargs sed -i
-	dm = !sh -c 'git branch --merged | grep -v "^master$" | grep -v \"\\*\" | xargs -n 1 git branch -d'
+	dm = !sh -c 'git branch --merged | grep -v \"^\\s*master$\" | grep -v \"\\*\" | xargs -n 1 git branch -d'
 [branch]
 	autosetupmerge = true
 [rerere]
