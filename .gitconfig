@@ -26,6 +26,7 @@
 	cp = cherry-pick
 	rh = reset --hard HEAD
 	st = status
+	sb = status -sb
 
 	# Meta
 	finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
@@ -35,6 +36,7 @@
 	ss = stash show
 	sd = stash drop
 	sl = stash list
+	ps = stash -p
 
 	# Rebasing
 	ra = rebase --abort
