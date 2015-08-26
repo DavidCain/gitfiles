@@ -24,7 +24,7 @@
 	cia = commit --amend
 	co = checkout
 	cp = cherry-pick
-	rh = reset --hard HEAD
+	rh = reset --hard
 	st = status
 	sb = status -sb
 
