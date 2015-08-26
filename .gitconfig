@@ -62,6 +62,7 @@
 	wu = whatchanged -p -w --word-diff=color
 
 	# Custom commands
+	root = rev-parse --show-toplevel
 	delete = !~/Documents/gitfiles/git-rm-history.sh
 	sed = !git ls-files | xargs sed -i
 	dm = !sh -c 'git branch --merged | grep -v \"^\\s*master$\" | grep -v \"\\*\" | xargs -n 1 git branch -d'
