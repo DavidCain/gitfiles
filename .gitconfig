@@ -57,6 +57,7 @@
 	la = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]' --graph -p
 	lo = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]'
 	lg = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]' --graph
+	mylog = !git log --author=\"$(git config user.name)\"
 	wh = whatchanged
 	wp = whatchanged -p
 	wu = whatchanged -p -w --word-diff=color
