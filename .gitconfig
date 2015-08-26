@@ -34,6 +34,7 @@
 	# Stashes
 	sp = stash pop
 	ss = stash show
+	ssp = stash show -p
 	sd = stash drop
 	sl = stash list
 	ps = stash -p
