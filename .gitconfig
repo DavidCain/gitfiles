@@ -19,8 +19,6 @@
     finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
 
     # General
-    a  = add
-    ap = add -p
     bl = blame
     ci = commit
     cia = commit --amend
@@ -52,6 +50,14 @@
     ra = rebase --abort
     ri = rebase --interactive
     rc = rebase --continue
+
+    # Staging
+    a  = add
+    ap = add -p
+    ignore = update-index --assume-unchanged
+    heed   = update-index --no-assume-unchanged
+    ig = !git ignore "$(git root)/Gemfile.lock"
+    hg = !git heed   "$(git root)/Gemfile.lock"  # I don't use Mercurial, so don't mind the collision
 
     # Stashes
     sp = stash pop
