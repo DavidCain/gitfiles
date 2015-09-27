@@ -56,8 +56,8 @@
     ap = add -p
     ignore = update-index --assume-unchanged
     heed   = update-index --no-assume-unchanged
-    ig = !git ignore "$(git root)/Gemfile.lock"
-    hg = !git heed   "$(git root)/Gemfile.lock"  # I don't use Mercurial, so don't mind the collision
+    ig = !git checkout "$(git root)/Gemfile.lock" && git ignore "$(git root)/Gemfile.lock"
+    hg = !git heed  "$(git root)/Gemfile.lock"  # I don't use Mercurial, so don't mind the collision
 
     # Searching
     g = grep --break --heading --line-number  # Group things together like ack
