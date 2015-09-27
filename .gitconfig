@@ -59,6 +59,9 @@
     ig = !git ignore "$(git root)/Gemfile.lock"
     hg = !git heed   "$(git root)/Gemfile.lock"  # I don't use Mercurial, so don't mind the collision
 
+    # Searching
+    g = grep --break --heading --line-number  # Group things together like ack
+
     # Stashes
     sp = stash pop
     ss = stash show
