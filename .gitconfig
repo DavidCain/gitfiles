@@ -75,7 +75,7 @@
     # Miscellaneous custom commands
     root = rev-parse --show-toplevel
     delete = !~/Documents/gitfiles/git-rm-history.sh
-    sed = !git ls-files | xargs sed -i
+    sed = !git grep -z --full-name -l '.' | LANG=C xargs -0 sed -i '' -e
 
 [branch]
     autosetupmerge = true
