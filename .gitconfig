@@ -19,21 +19,23 @@
     finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
 
     # General
-    bl = blame
-    ci = commit
+    bl  = blame
+    ci  = commit
     cia = commit --amend
-    co = checkout
-    cp = cherry-pick
-    rh = reset --hard
-    st = status
-    sb = status -sb
+    co  = checkout
+    cob = checkout --branch
+    cp  = cherry-pick
+    cpc = cherry-pick --continue
+    rh  = reset --hard
+    st  = status
+    sb  = status -sb
 
     # Branching
     br = branch
     dm = !sh -c 'git branch --merged | grep -v \"^\\s*master$\" | grep -v \"\\*\" | xargs -n 1 git branch -d'
 
     # Diffs
-    d  = diff
+    d = diff
     u = diff -w --word-diff=color
     staged = diff --cached
 
@@ -61,12 +63,12 @@
     g = grep --break --heading --line-number  # Group things together like ack
 
     # Stashes
-    sp = stash pop
-    ss = stash show
+    sp  = stash pop
+    ss  = stash show
     ssp = stash show -p
-    sd = stash drop
-    sl = stash list
-    ps = stash -p
+    sd  = stash drop
+    sl  = stash list
+    ps  = stash -p
 
     # Tags
     ft = fetch --tags
