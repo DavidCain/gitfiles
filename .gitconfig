@@ -30,6 +30,9 @@
     st  = status
     sb  = status -sb
 
+    # Pushing
+    please = push --force-with-lease
+
     # Branching
     br = branch
     dm = !sh -c 'git branch --merged | grep -v \"^\\s*master$\" | grep -v \"\\*\" | xargs -n 1 git branch -d'
