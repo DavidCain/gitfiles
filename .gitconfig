@@ -23,7 +23,7 @@
     ci  = commit
     cia = commit --amend
     co  = checkout
-    cob = checkout --branch
+    cob = checkout -b
     cp  = cherry-pick
     cpc = cherry-pick --continue
     rh  = reset --hard
