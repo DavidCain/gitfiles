@@ -47,9 +47,9 @@
     lo = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]'
     lg = log --pretty=tformat:'%C(magenta)%h%C(reset)%C(red)%d%C(reset) %s [%C(bold blue)%an%C(reset) %C(cyan)%ar%C(reset)]' --graph
     mylog = !git log --author=\"$(git config user.name)\"
-    wh = whatchanged
-    wp = whatchanged -p
-    wu = whatchanged -p -w --word-diff=color
+    wh = log --raw --no-merges
+    wp = log --raw --no-merges -p
+    wu = log --raw --no-merges -p -w --word-diff=color
 
     # Rebasing
     ra = rebase --abort
