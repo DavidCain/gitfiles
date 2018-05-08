@@ -10,7 +10,7 @@
 [difftool]
     prompt = false
 [core]
-    excludesfile = ~/Documents/gitfiles/.gitignore_global
+    excludesfile = ~/.gitignore
     whitespace = trailing-space,space-before-tab
     autocrlf = input
     editor = /usr/bin/env vim
@@ -79,7 +79,7 @@
 
     # Miscellaneous custom commands
     root = rev-parse --show-toplevel
-    delete = !~/Documents/gitfiles/git-rm-history.sh
+    #delete = !~/gitfiles/git-rm-history.sh
     sed = !git grep -z --full-name -l '.' | LANG=C xargs -0 sed -i '' -e
 
 [branch]
