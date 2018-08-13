@@ -81,6 +81,7 @@
     root = rev-parse --show-toplevel
     #delete = !~/gitfiles/git-rm-history.sh
     sed = !git grep -z --full-name -l '.' | LANG=C xargs -0 sed -i '' -e
+    ctags = !.git/hooks/ctags
 
 [branch]
     autosetupmerge = true
@@ -102,3 +103,5 @@
     default = simple
 [grep]
     linenumber = true
+[init]
+    templatedir = ~/.git_template
