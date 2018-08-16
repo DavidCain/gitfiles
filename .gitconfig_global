@@ -82,6 +82,7 @@
     #delete = !~/gitfiles/git-rm-history.sh
     sed = !git grep -z --full-name -l '.' | LANG=C xargs -0 sed -i '' -e
     ctags = !.git/hooks/ctags
+    undo = !git show | git apply -R
 
 [branch]
     autosetupmerge = true
