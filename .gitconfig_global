@@ -83,9 +83,12 @@
     # Miscellaneous custom commands
     root = rev-parse --show-toplevel
     #delete = !~/gitfiles/git-rm-history.sh
-    sed = !git grep -z --full-name -l '.' | LANG=C xargs -0 sed -i '' -e
     ctags = !.git/hooks/ctags
     undo = !git show | git apply -R
+
+    # Substitute a string across all files tracked in Git (e.g. `git sed improt import`)
+    # (Piping all tracked files to `sed -i` will update timestamps & may change newlines)
+    sed = "!git grep -z --full-name -l \"$1\" | LANG=C xargs -0 sed -i '' -e \"s/$1/$2/g\" #"
 
 [branch]
     autosetupmerge = true
