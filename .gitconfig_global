@@ -1,6 +1,7 @@
 [user]
     name = David Cain
     email = davidjosephcain@gmail.com
+    signingkey = 8D4C4ABF1EA02DC1
 [color]
     ui = true
 [merge]
@@ -112,3 +113,5 @@
     linenumber = true
 [init]
     templatedir = ~/.git_template
+[commit]
+    gpgsign = true
