@@ -31,6 +31,10 @@
     st  = status
     sb  = status -sb
 
+    # Remote branches
+    f   = fetch
+    rho = reset --hard origin/master
+
     # Pushing
     please = push --force-with-lease
 
@@ -53,6 +57,7 @@
     wu = log --raw --no-merges -p -w --word-diff=color
 
     # Rebasing
+    r = rebase
     ra = rebase --abort
     ri = rebase --interactive
     rc = rebase --continue
@@ -67,12 +72,12 @@
     g = grep --break --heading --line-number  # Group things together like ack
 
     # Stashes
+    # (No shortcut for plain `stash`, since it's too similar to status)
     sp  = stash pop
     ss  = stash show
     ssp = stash show -p
     sd  = stash drop
     sl  = stash list
-    ps  = stash -p
 
     # Tags
     ft = fetch --tags
