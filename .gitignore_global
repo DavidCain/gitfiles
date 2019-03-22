@@ -60,3 +60,7 @@ Thumbs.db
 # Miscellaneous #
 #################
 .ropeproject
+
+# Project-specific .vimrc #
+###########################
+.vimrc
