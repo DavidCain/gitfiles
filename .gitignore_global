@@ -1,5 +1,6 @@
 # Python gitignore #
 ####################
+.python-version
 *.py[cod]
 
 # Packages (modified to exclude some directories I like to track)
@@ -43,6 +44,7 @@ pip-log.txt
 *.rar
 *.tar
 *.zip
+node_modules
 
 # Logs and databases #
 ######################
