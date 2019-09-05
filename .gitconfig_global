@@ -136,3 +136,5 @@
     whitespace = red reverse
 [diff-so-fancy]
     markEmptyLines = false
+[rebase]
+	autosquash = true
