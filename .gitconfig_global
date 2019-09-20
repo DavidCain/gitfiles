@@ -94,6 +94,7 @@
     #delete = !~/gitfiles/git-rm-history.sh
     ctags = !.git/hooks/ctags
     undo = !git show | git apply -R
+    copy = "!/bin/bash -c \"git show -s --format=%B \"$@\" | tee >(pbcopy) >(which -s tmux && tmux info &> /dev/null && tmux loadb -)\""
 
     # Substitute a string across all files tracked in Git (e.g. `git sed improt import`)
     # (Piping all tracked files to `sed -i` will update timestamps & may change newlines)
