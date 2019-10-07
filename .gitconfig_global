@@ -62,7 +62,7 @@
     ra = rebase --abort
     ri = rebase --interactive
     rc = rebase --continue
-    fix = "!quickfix() { git commit --fixup=\"$1\" && git rebase --autosquash --interactive \"$1\"^; }; quickfix"
+    fix = "!quickfix() { git commit --no-verify --fixup=\"$1\" && git rebase --autosquash --interactive \"$1\"^; }; quickfix"
 
     # Staging
     a  = add
