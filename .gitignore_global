@@ -71,3 +71,7 @@ Thumbs.db
 #############################################
 .spellfile.en.utf-8.add
 .spellfile.en.utf-8.add.spl
+
+# Code coverage #
+#################
+/htmlcov
