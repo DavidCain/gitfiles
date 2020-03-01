@@ -1,3 +1,7 @@
+# Ruby gitignore #
+####################
+.ruby-version
+
 # Python gitignore #
 ####################
 .python-version
