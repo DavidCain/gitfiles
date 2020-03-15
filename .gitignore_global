@@ -45,6 +45,7 @@ pip-log.txt
 *.tar
 *.zip
 node_modules
+.tool-versions
 
 # Logs and databases #
 ######################
