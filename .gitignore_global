@@ -1,5 +1,9 @@
+#dotenv #
+#########
+.envrc
+
 # Ruby gitignore #
-####################
+##################
 .ruby-version
 
 # Python gitignore #
