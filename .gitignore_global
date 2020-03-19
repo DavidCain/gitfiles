@@ -23,6 +23,11 @@ __pycache__
 # Installer logs
 pip-log.txt
 
+# Miscellaneous
+.ropeproject
+
+# Code coverage
+/htmlcov
 
 # Vim undofiles #
 #################
@@ -64,10 +69,6 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
-# Miscellaneous #
-#################
-.ropeproject
-
 # Project-specific .vimrc #
 ###########################
 .vimrc
@@ -76,7 +77,3 @@ Thumbs.db
 #############################################
 .spellfile.en.utf-8.add
 .spellfile.en.utf-8.add.spl
-
-# Code coverage #
-#################
-/htmlcov
