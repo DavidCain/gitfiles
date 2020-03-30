@@ -33,7 +33,7 @@
     sb  = status -sb
 
     # Remote branches
-    f   = fetch
+    f   = fetch --prune
     rho = reset --hard origin/master
 
     # Pushing
