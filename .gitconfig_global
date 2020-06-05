@@ -138,4 +138,6 @@
 [diff-so-fancy]
     markEmptyLines = false
 [rebase]
-	autosquash = true
+    autosquash = true
+[pull]
+    rebase = true
