@@ -119,6 +119,10 @@
     default = simple
 [grep]
     linenumber = true
+[color "grep"]
+    linenumber = green bold
+    match = red
+    filename = magenta
 [init]
     templatedir = ~/.git_template
 [commit]
