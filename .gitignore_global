@@ -2,13 +2,8 @@
 #########
 .envrc
 
-# Ruby gitignore #
-##################
-.ruby-version
-
 # Python gitignore #
 ####################
-.python-version
 *.py[cod]
 
 # Packages (modified to exclude some directories I like to track)
