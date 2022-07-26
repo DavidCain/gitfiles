@@ -41,6 +41,7 @@
 
     # Branching
     br = branch
+    gone = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
     dm = !sh -c 'git branch --merged | grep -v \"^\\s*master$\" | grep -v \"\\*\" | xargs -n 1 git branch -d'
 
     # Diffs
