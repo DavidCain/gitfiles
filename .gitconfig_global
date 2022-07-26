@@ -62,6 +62,7 @@
     ra = rebase --abort
     ri = rebase --interactive
     rc = rebase --continue
+    ro = rebase origin/master
     fix = "!quickfix() { git commit --no-verify --fixup=\"$1\" && git diff --ignore-submodules=all --quiet --exit-code && git rebase --autosquash --interactive \"$1\"^; }; quickfix"
 
     # Staging
