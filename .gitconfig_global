@@ -128,8 +128,6 @@
     filename = magenta
 [init]
     templatedir = ~/.git_template
-[commit]
-    gpgsign = true
 [color "diff-highlight"]
     oldNormal = red bold
     oldHighlight = red bold 52
